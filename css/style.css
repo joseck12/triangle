@@ -1,6 +1,6 @@
 h1{
   color: red;
-  font-size: 50px;
+  font-size: 30px;
 }
 .column {
     float: left;
@@ -12,4 +12,7 @@ h1{
     content: "";
     display: table;
     clear: both;
+}
+body{
+  background-color: #AED6F1;
 }
