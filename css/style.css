@@ -13,6 +13,8 @@ ol{
 p{
   font-family: inherit;
 }
-.giphy{
-  float: right;
+body {
+  background-image: url("http://4dl44w2rznek1kjkb52mfcfr.wpengine.netdna-cdn.com/wp-content/uploads/2018/03/loading-wheel.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
