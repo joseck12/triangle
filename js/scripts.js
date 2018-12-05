@@ -1,26 +1,16 @@
-function press(){
-var add = function(side1,side2,side3) {
-return side1+side2+side3;
-};
+function theTriangle() {
+  var sideA = parseInt(document.getElementById("sideA").value);
+  var sideB = parseInt(document.getElementById("sideB").value);
+  var sideC = parseInt(document.getElementById("sideC").value);
 
-{
-var side1 = parseInt(prompt("enter side1:"));
-var side2 = parseInt(prompt("enter side2:"));
-var side3 = parseInt(prompt("enter side3:"));
-var sum = add(side1, side2, side3);
-alert(sum);
-
-if(side1+side2<=side3 && side2+side3<=side1)
-alert('Not a triangle!')
-
- else if(side1==side2&&side2==side3)
-   alert('Equilateral:All sides are equal!');
-
-  else if(side1===side2||side2===side3)
-    alert('Isosceles:Two sides are equal!');
-
-  else
-    alert('Scalene:No sides are equal!'
-    );
+  if (sideA === sideB && sideB === sideC && sideA === sideC) {
+    alert("equilateral Triangle.");
+  } else if (sideA === sideB || sideB === sideC || sideA === sideC) {
+    alert("isosceles Triangle");
+  } else if (sideA + sideB > sideC || sideB + sideC >= sideA || sideA + sideC <= sideB) {
+    alert("scalene Triangle");
+  } else {
+    alert("Not a Triangle");
   }
 }
+alert(theTriangle());
